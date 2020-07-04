@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_comment_black_24dp"
+            android:title="@string/complaints" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/bills" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_payment_black_24dp"
+                android:title="@string/calculator" />
+
+        </menu>
+    </item>
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="@string/phistory" />
+            <item
+                android:id="@+id/uhistory"
+                android:icon="@drawable/ic_data_usage_black_24dp"
+                android:title="@string/uhistory" />
+            <item
+                android:id="@+id/location"
+                android:icon="@drawable/ic_location_on_black_24dp"
+                android:title="@string/locate" />
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/setting" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

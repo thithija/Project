@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">CEB care</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="Home">Home</string>
+    <string name="complaints">Complaints</string>
+    <string name="calendar">Interruption Calendar</string>
+    <string name="bills">View My Bills</string>
+    <string name="calculator">Bill Calculator</string>
+    <string name="phistory">Payment History</string>
+    <string name="uhistory">Usage History</string>
+    <string name="locate">Locate Us</string>
+    <string name="setting">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="google_maps_key">AIzaSyChRank7evVWERigJtm6Tw94UcyL2TNXhw</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="interruption">Check out our planned power interruption
+        schedule before you make plans.
+        Lets be aware,lets be prepared! </string>
+    <string name="plan">Tariff plans for electricity usage in private residences,
+        are as follows.</string>
+    <string name="notice1">You can not lodge new complaint while having another processing complaint.</string>
+    <string name="notice2">You will be notifiedwhile complaint is in process.</string>
+
+    <string name="ceb">The Ceylon Electricity Board - CEB, is the largest electricity
+        company in Sri Lanka. With a market share of nearly 100%, it controls all major functions of electricity generation,
+        transmission, distribution and retailing in Sri Lanka.</string>
+
+
+</resources>

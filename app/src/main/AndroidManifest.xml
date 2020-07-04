@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mysqlinsert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.popUp.PopUpMessage"></activity>
+        <activity android:name=".NewAcc" />
+        <activity android:name=".EditProf" />
+        <activity android:name=".PasswordChange" />
+        <activity android:name=".about" />
+        <activity android:name=".pgatway" />
+        <activity android:name=".pay" />
+        <activity android:name=".ui.notification.ViewNotification" />
+        <activity android:name=".Activities.AdminUi.ViewComplain" />
+        <activity android:name=".Activities.AdminUi.Notification" />
+        <activity android:name=".Activities.AdminUi.Advertiecement" />
+        <activity android:name=".Activities.AdminUi.PeakTime" />
+        <activity android:name=".Activities.AdminUi.CreateAcc" />
+        <activity android:name=".Activities.AdminUi.AdInterruption" />
+        <activity
+            android:name=".Main3Activity"
+            android:theme="@style/AppThemea" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mysqlinsert.Splash" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

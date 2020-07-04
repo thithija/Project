@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/brown">
+        <Button
+            android:id="@+id/backp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_height="35dp"
+            android:layout_weight="3"
+            android:background="@drawable/ic_dehaze_black_24dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:text="View Complains"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:textColor="#000"
+            android:text="All Peak Hours"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="22dp"
+        android:stretchColumns="0,1,2">
+        <TableRow
+            android:background="@color/brown"
+            android:layout_margin="2dip">
+            <TextView
+                android:text="Time of Use"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="Unit Charge"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:padding="2dip" />
+            <TextView
+                android:text="Fixed Charge"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Peak"
+                android:padding="3dip"
+                android:gravity="center"/>
+            <TextView
+                android:text="54.00"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="540.00"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Day"
+                android:padding="3dip"
+                android:gravity="center"/>
+            <TextView
+                android:text="25.00"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="540.00"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Off-peak "
+                android:padding="3dip"
+                android:gravity="center"/>
+            <TextView
+                android:text="13.00"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="540.00"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="22dp"
+        android:textColor="#000"
+        android:text="Add Peak Hours"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/startT"
+                    android:layout_width="302dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="22dp"
+                    android:hint="Start Time" />
+                <EditText
+                    android:id="@+id/endT"
+                    android:layout_width="302dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="End Time" />
+                <EditText
+                    android:id="@+id/pPrices"
+                    android:layout_width="302dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Price" />
+
+                <Button
+                    android:id="@+id/addP"
+                    android:layout_width="197dp"
+                    android:layout_height="49dp"
+                    android:background="@drawable/button"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Add Peak Hours" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

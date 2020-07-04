@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCCCB"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ceyloan Electricity Board"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ceb"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Open Now : 8.00AM - 4.30PM"
+                    android:textColor="#000"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCCCB"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL US!"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" We’re Just One Call Away!"
+            android:layout_marginLeft="22dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="0,1,2">
+            <TableRow
+                android:background="@color/brown"
+                android:layout_margin="2dip">
+                <TextView
+                    android:text="OFFICE"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="TELEPHONE"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:padding="2dip" />
+                <TextView
+                    android:text="EMAIL"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Colombo"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="011 257 5923"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmcc@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="North Central"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="025 222 1747"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmncp@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Northern"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="021 222 2496"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmnp@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Central"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="081 223 4000"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmcp@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Sabaragamuwa"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="045 222 6888"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmsab@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="North Western"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="037 228 1311"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmnwp@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Western North"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="011 434 4709"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmwpn@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Southern"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="091 223 2092"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmsp@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Uva"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="055 222 2474"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmup@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Western South II"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="011 288 0695-9"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmwps2@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Eastern "
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="026 222 2666"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="dgmep@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Western South I"
+                    android:padding="3dip"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="011 421 5334"
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="	dgmwps1@ceb.lk"
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/c"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".Activities.AdminUi.AdInterruption">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/brown">
+            <Button
+                android:id="@+id/backd"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:layout_height="35dp"
+                android:layout_weight="3"
+                android:background="@drawable/ic_dehaze_black_24dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/inter"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:text="Add Interruption"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/brown"
+                    android:layout_marginBottom="5dp"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CFCCCB"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Interruption"
+                    android:textColor="#838282"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/intdt"
+                    android:layout_width="300dp"
+                    android:layout_height="49dp"
+                    android:ems="10"
+                    android:hint="YYYY/MM/DD"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <EditText
+                    android:id="@+id/intdesc"
+                    android:layout_width="300dp"
+                    android:layout_height="49dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/i_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="140dp"
+                    android:ems="10"
+                    android:text="Interruption time"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/to"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:ems="10"
+                        android:layout_weight=".5"
+                        android:hint="Start Time"
+                        android:inputType="textPersonName"
+                        android:layout_marginTop="5dp" />
+
+                    <EditText
+                        android:id="@+id/from"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_weight=".5"
+                        android:ems="10"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="start|top"
+                        android:hint="End Time"
+                        android:inputType="textPersonName"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/adint"
+                    android:layout_width="197dp"
+                    android:layout_height="49dp"
+                    android:background="@drawable/button"
+                    android:text="ADD"
+                    android:textColor="#fff"
+                   android:layout_marginLeft="30dp"
+                    android:layout_marginTop="230dp"/>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@Ceylon Electricity Board 2020"
+                    android:textSize="12dp"
+                    android:textColor="#838282"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="148dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/c"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

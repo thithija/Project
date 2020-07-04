@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mysqlinsert.ui.home.HomeFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mysqlinsert.ui.complain.GalleryFragment"
+        android:label="@string/complaints"
+        tools:layout="@layout/fragment_complain" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.mysqlinsert.ui.interruption.SlideshowFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_interruption" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.mysqlinsert.ui.viewbills.ToolsFragment"
+        android:label="@string/bills"
+        tools:layout="@layout/fragment_viewbills" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.mysqlinsert.ui.billcalculator.ShareFragment"
+        android:label="@string/calculator"
+        tools:layout="@layout/fragment_billcalculator" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.mysqlinsert.ui.phistory.SendFragment"
+        android:label="@string/phistory"
+        tools:layout="@layout/fragment_phistory" />
+    <fragment
+        android:id="@+id/uhistory"
+        android:name="com.example.mysqlinsert.ui.uhistory.uhistoryFragment"
+        android:label="@string/uhistory"
+        tools:layout="@layout/fragment_uhistory"
+      />
+    <fragment
+        android:id="@+id/location"
+        android:name="com.example.mysqlinsert.ui.location.LocationFragment"
+        android:label="@string/locate"
+        tools:layout="@layout/fragment_location"
+        />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.mysqlinsert.ui.settings.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting"
+        />
+
+</navigation>

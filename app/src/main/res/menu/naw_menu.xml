@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ad_int"
+        android:title="Interruption"
+        android:icon="@drawable/ic_data_usage_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/ad_adver"
+        android:title="Advertisement"
+        android:icon="@drawable/ic_description_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/p_time"
+        android:title="Peak TIme"
+        android:icon="@drawable/ic_history_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/aAcc"
+        android:title="Create Accounts"
+        android:icon="@drawable/ic_account_box_black_24dp">
+
+    </item>
+    <item
+        android:id="@+id/noti"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Add Notification" />
+    <item
+        android:id="@+id/com"
+        android:icon="@drawable/ic_comment_black_24dp"
+        android:title="View Complain" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="@string/logout" />
+</menu>
